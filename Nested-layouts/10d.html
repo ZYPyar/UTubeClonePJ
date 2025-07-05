@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            font-family: Arial;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .profile-preview {
+            box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.35);
+        }
+        /* .profile-picture-bar {
+            width: 200px;
+        } */
+        .profile-picture {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        /* .profile-info {
+            width: 200px;
+        } */
+        .name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 4px;
+            margin-left: 5px;
+        }
+        .mutual-bar {
+            width: 150px;
+            height: 30px;
+            margin-bottom: 10px;
+            margin-left: 5px;
+        }
+        .mutual-friend-pic {
+            vertical-align: middle;
+            display: inline-block;
+            width: 30px;
+        }
+        .thumbnail{
+            width: 30px;
+            height: 30px;
+            border-radius: 35px;
+            object-fit: cover;
+        }
+        .mutual-info {
+            display: inline-block;
+            width: 100px;
+        }
+        .mutual-friend {
+            color: rgb(96, 96, 96);
+            font-size: 15px;
+            width: 120px;
+        }
+        .add-button {
+            background-color: rgb(2, 120, 255);
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-bottom: 15px;
+            margin-left: 5px;
+        }
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 180px 180px 180px;
+            align-items: center;
+            column-gap: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-grid">
+        <div class="profile-preview">
+            <div class="profile-picture-bar">
+                <img class="profile-picture" src="/thumbnail/cat.jpg" alt="">
+            </div>
+            <div class="profile-info">
+                <div class="name">
+                    <p>Oliver</p>
+                </div>
+                <div class="mutual-bar">
+                    <div class="mutual-friend-pic">
+                        <img class="thumbnail" src="/thumbnail/dog2.jpg" alt="">
+                    </div>
+                    <div class="mutual-info">
+                        <p class="mutual-friend">2 mutual friends</p>
+                    </div>
+                </div>
+                <div class="button-bar">
+                    <button class="add-button">Add Friend</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="profile-preview">
+            <div class="profile-picture-bar">
+                <img class="profile-picture" src="/thumbnail/cat2.jpg" alt="">
+            </div>
+            <div class="profile-info">
+                <div class="name">
+                    <p>Mimi</p>
+                </div>
+                <div class="mutual-bar">
+                    <div class="mutual-friend-pic">
+                        <img class="thumbnail" src="/thumbnail/dog2.jpg" alt="">
+                    </div>
+                    <div class="mutual-info">
+                        <p class="mutual-friend">2 mutual friends</p>
+                    </div>
+                </div>
+                <div class="button-bar">
+                    <button class="add-button">Add Friend</button>
+                </div>
+            </div>
+        </div>
+        <div class="profile-preview">
+            <div class="profile-picture-bar">
+                <img class="profile-picture" src="/thumbnail/dog.jpg" alt="">
+            </div>
+            <div class="profile-info">
+                <div class="name">
+                    <p>Rex</p>
+                </div>
+                <div class="mutual-bar">
+                    <div class="mutual-friend-pic">
+                        <img class="thumbnail" src="/thumbnail/dog2.jpg" alt="">
+                    </div>
+                    <div class="mutual-info">
+                        <p class="mutual-friend">2 mutual friends</p>
+                    </div>
+                </div>
+                <div class="button-bar">
+                    <button class="add-button">Add Friend</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+        div {
+            font-family: Arial;
+        }
+        .tweet-preview {
+            display: flex;
+            width: 420px;
+        }
+        .thumbnail {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 30px;
+            margin-right: 10px;
+        }
+        .stats-info {
+            float: 1;
+        }
+       .author-bar {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 5px;
+       }
+        .author {
+            
+            font-weight: bold;
+        }
+        .name {
+            color: rgb(96 ,96 ,96);
+        }
+        .title {
+            line-height: 20px;
+            margin-bottom: 15px;
+        }
+
+        .link-box {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(200, 200, 200);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .color-box {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(220, 220, 220);
+            margin-right: 10px;
+        }
+        .youtube-profile-link {
+            flex: 1;
+        }
+        .youtube {
+            color: rgb(111, 111, 111);
+            margin-bottom: 3px;
+        }
+        .youtube-title {
+            line-height: 22px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tweet-preview">
+        <div class="profile-picture">
+            <img class="thumbnail" src="/thumbnail/cat.jpg" alt="">
+        </div>
+
+        <div class="stats-info">
+            <div class="author-bar">
+                <div class="author">supersimple.dev</div> 
+                <div class="name">@SuperSimpleDev</div>
+            </div>
+            <div class="title">
+                What is backend web development?
+                A complete overiew. New video is up!
+            </div>
+
+            <div class="link-box">
+                <div class="color-box"></div>
+                <div class="youtube-profile-link">
+                    <div class="youtube">
+                        youtube.com
+                    </div>
+                    <div class="youtube-title">
+                        Bcakend web development
+                        - a complete overview (2021)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

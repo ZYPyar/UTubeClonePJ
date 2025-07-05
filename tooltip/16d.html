@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            margin: 0;
+            font-family: Arial;
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 10px;
+        }
+      
+        .thumbnail-container {
+            position: relative;
+            
+        }
+        .thumbnail {
+            width: 350px;
+            height: 200px;
+            object-fit: cover;
+            margin-left: 10px;
+        }
+
+        .channel-picture-row {
+            width: 50px;
+            height: 50px;
+            margin-left: 10px;
+            margin-right: 10px;
+            position: relative;
+        }
+
+        .channel-picture {
+            width: 40px;
+            height: 40px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        .video-time {
+            position: absolute;
+            background-color: black;
+            color: white;
+            bottom: 10px;
+            right: 20px;
+        }
+        
+        .video-info {
+            display: flex;
+            justify-content: center;
+            align-items: top;
+            margin-top: 10px;
+        }
+        .video-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .video-author, 
+        .video-view {
+            font-size: 14px;
+            color: gray;
+            margin-bottom: 4px;
+        }
+        .video-author {
+            margin-bottom: 4px;
+        }
+
+        .tooltip-container {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 220px;
+            height: 60px;
+            background-color: white;
+            border-radius: 8px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+        }
+        .channel-picture-row:hover .tooltip-container {
+            opacity: 1;
+            transition: opacity 0.3s ease-in-out;
+            pointer-events: none;
+        }
+        .tooltip-image-row {
+            margin-right: 6px;
+        }
+        .tooltip-image {
+            height: 50px;
+            border-radius: 25px;
+        }
+        .tooltip-author {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        .tooltip-views {
+            font-size: 14px;
+            color: gray;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="video-grid"> 
+        <div class="video-preview">
+            <div class="thumbnail-container">
+                <img class="thumbnail" src="/thumbnail/thumbnail-1.webp" alt="">
+                <div class="video-time">14:20</div>
+            </div>
+            <div class="video-info">
+                <div class="channel-picture-row">
+                    <img class="channel-picture" src="/channel-picture/channel-1.jpeg" alt="">
+                    <div class="tooltip-container">
+                        <div class="tooltip-image-row">
+                            <img class="tooltip-image" src="/channel-picture/channel-1.jpeg" alt="">
+                        </div>
+                        <div class="tooltip-text-row">
+                            <p class="tooltip-author">Marques Brownlee</p>
+                            <p class="tooltip-views">15M subscribers</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="video-details">
+                    <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                    <p class="video-author">Marques Brownlee</p>
+                    <p class="video-view">3.4M views · 6 months ago</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="video-preview">
+            <div class="thumbnail-container">
+                <img class="thumbnail" src="/thumbnail/thumbnail-2.webp" alt="">
+                <div class="video-time">14:20</div>
+            </div>
+            <div class="video-info">
+                <div class="channel-picture-row">
+                    <img class="channel-picture" src="/channel-picture/channel-2.jpeg" alt="">
+                    <div class="tooltip-container">
+                        <div class="tooltip-image-row">
+                            <img class="tooltip-image" src="/channel-picture/channel-2.jpeg" alt="">
+                        </div>
+                        <div class="tooltip-text-row">
+                            <p class="tooltip-author">Markiplier</p>
+                            <p class="tooltip-views">35M subscribers</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="video-details">
+                    <p class="video-title">Try Not to Laugh Challenge #9</p>
+                    <p class="video-author">Markiplier</p>
+                    <p class="video-view">19M views · 4 years ago</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

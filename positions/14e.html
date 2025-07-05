@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            height: 3000px;
+            padding-top: 80px;
+        }
+       
+        .header {
+            display: flex;
+            position:  fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: turquoise;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .left-section {
+            display: flex;
+            align-items: center;
+        }
+        .thumbnail {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 50px;
+            margin-right: 10px;
+        }
+
+        .name {
+            font-family: Arial;
+            font-weight: bold;
+        }
+        .add-friend {
+            background-color: rgb(24, 119, 242);
+            color: white;
+            font-weight: bold;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-family: Arial;
+        }
+
+        .message {
+            font-weight: bold;
+            background-color: rgb(230, 230, 230);
+            border: none;
+            padding: 8px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-family: Arial;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="left-section">
+            <img class="thumbnail" src="/thumbnail/cat.jpg" alt="">
+            <div class="name">Olive Cat</div>
+        </div>
+        <div class="right-section">
+            <button class="add-friend">
+                Add Friend
+            </button>
+            <button class="message">
+                Message
+            </button>
+        </div>
+    </div>
+    <div class="content">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut cum sit officia reprehenderit veritatis dolorem vel, quaerat, ducimus natus 
+            nemo repellat! 
+            Deserunt fuga iusto, expedita quaerat eveniet
+            blanditiis vitae consectetur!
+    </div>
+</body>
+</html>

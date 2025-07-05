@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            height: 3000px;
+        }
+        div {
+            font-family: Arial;
+        }
+        .sidebar1 {
+            background-color: rgb(33, 33, 33);
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            padding-top: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .thumbnail {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 25px;
+            margin-bottom: 10px;
+        }
+        .sidebar2 {
+            background-color: rgb(53, 54, 54);
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 70px;
+            width: 150px;
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+       
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 15px;
+            padding-left: 15px;
+            margin-bottom: 10px;
+        }
+        .info {
+            font-size: 13px;
+            color: white;
+            font-weight: bold;
+        }
+        .add {
+            font-size: 19px;
+            color: white;
+        }
+
+       
+        .new-video {
+            font-size: 15px;
+            color: gray;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        .update {
+            font-size: 15px;
+            color: gray;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        .faq {
+            font-size: 15px;
+            color: gray;
+            margin-left: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="sidebar1">
+        <div class="profile-img">
+            <img class="thumbnail" src="/thumbnail/cat.jpg" alt="">
+        </div>
+        <div class="profile-img">
+            <img class="thumbnail" src="/thumbnail/cat2.jpg" alt="">
+        </div>
+        <div class="profile-img">
+            <img class="thumbnail" src="/thumbnail/dog.jpg" alt="">
+        </div>
+    </div>
+    <div class="sidebar2">
+        <div class="header">
+            <div class="info">INFO</div>
+            <div class="add">+</div>
+        </div>
+
+         <div class="new-video">
+                # new-video
+        </div>
+        <div class="update">
+                # updates
+        </div>
+        <div class="faq">
+                # faq
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p { 
+            font-family: Arial;
+            margin-top: 0;
+            margin-bottom: 0;
+            line-height: 17px;
+        }
+        .name {
+            font-weight: bold;
+            
+        }
+        .species, .stats {
+            color: rgb(157, 157, 157);
+           
+        }
+        .flex-box {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .profile-picture {
+            width: 100px;
+        }
+        .thumbnail {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50px;
+            margin-right: 10px;
+        }
+        .profile-info {
+            width: 200px;
+        }
+        .follow-button {
+            background-color: rgb(6, 95, 212);
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
+    </style>
+</head>
+<body style="
+        margin-top: 40px;
+        margin-left: 40px;">
+    <div class="flex-box">
+        <div class="profile-pic">
+            <img class="thumbnail" src="/thumbnail/cat.jpg" alt="">
+        </div>
+        <div class="profile-info">
+            <p class="name">oliver</p>
+            <p class="species">the cat</p>
+            <p class="stats">Popular</p>
+        </div>
+        <div class="button">
+            <button class="follow-button">Follow</button>
+        </div>
+    </div>
+
+    <div class="flex-box" style="margin-top: 20px;">
+        <div class="profile-pic">
+            <img class="thumbnail" src="/thumbnail/cat2.jpg" alt="">
+        </div>
+        <div class="profile-info">
+            <p class="name">Mimi</p>
+            <p class="species">Sleepy cat</p>
+            <p class="stats">Popular</p>
+        </div>
+        <div class="button">
+            <button class="follow-button">Follow</button>
+        </div>
+    </div>
+
+    <div class="flex-box" style="margin-top: 20px;">
+        <div class="profile-pic">
+            <img class="thumbnail" src="/thumbnail/dog.jpg" alt="">
+        </div>
+        <div class="profile-info">
+            <p class="name">Rex</p>
+            <p class="species">Happy Bulldog</p>
+            <p class="stats">Popular</p>
+        </div>
+        <div class="button">
+            <button class="follow-button">Follow</button>
+        </div>
+    </div>
+</body>
+</html>

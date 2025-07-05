@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+        .product-container {
+            position: relative;
+            display: inline-block;
+
+        }
+        .product-image {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+        }
+        .promotion{
+            background-color: black;
+            color: white;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-family: Arial;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .button-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 120px;
+            background-color: rgba(214, 213, 213, 0.8);
+            display: flex;
+            justify-content: center;    
+            align-items: center;
+        }
+        .add-to-cart-button {
+            background-color: white;
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <img class="product-image" src="/thumbnail/tshirt.jpg" alt="">
+        <div class="promotion">20% OFF</div>
+
+        <div class="button-overlay">
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>
